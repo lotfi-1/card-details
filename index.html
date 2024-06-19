@@ -1,0 +1,77 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- normalize file -->
+    <link rel="stylesheet" href="css/normaliz.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- card Style file-->
+    <link rel="stylesheet" href="css/cardstyle.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Iteractive-card</title>
+  </head>
+  <body>
+    <div class="pone"></div>
+    <div class="container">
+      <div class="head">
+        <div class="card back">
+          <div class="info cvc">000</div>
+          <!-- <div></div> -->
+        </div>
+        <div class="card front">
+          <div>
+            <span></span>
+            <span></span>
+          </div>
+          <div>
+            <div class="info code">0000 0000 0000 0000</div>
+            <div class="info name">JANE APPLESEED</div>
+            <div class="info date">00/00</div>
+          </div>
+        </div>
+      </div>
+
+      <form>
+        <div class="data">
+          <label>CARDHOLDER NAME</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" />
+        </div>
+
+        <div class="data">
+          <label>CARD NUMBER</label>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000" />
+        </div>
+
+        <div class="data">
+          <label>EXP. DATE (MM/YY)</label>
+          <input type="text" placeholder="MM" />
+          <input type="text" placeholder="YY" />
+        </div>
+
+        <div class="data">
+          <label>CVC</label>
+          <input type="text" placeholder="e.g. 123" />
+        </div>
+
+        <div>
+          <input type="button" value="Confirm" />
+        </div>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+.container .head .card{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container .head .card.front  div:first-child{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px 10px
+}
+.container .head .card.front  div:first-child span:first-child{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white
+}
+.container .head .card.front  div:first-child span:last-child{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white
+}
+.container .head .card.front  div:last-child{
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: row wrap
+}
+.container .head .card.front div:last-child div{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background-color: transparent;
+    padding: 5px;
+    color: white;
+}
+
+.container .head .card.front div:last-child div:first-child{
+    /* flex-basis: 100%; */
+    min-width: 200px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    justify-content: center;
+}
+  .container .head .card.front div:last-child div:nth-child(2){
+    font-size: 10px;
+    flex-basis: 50%
+}
+  .container .head .card.front div:last-child div:last-child{
+    flex-basis: 50%;
+    justify-content: flex-end
+}
+  
+
+/* .container .head .card.back div:first-child{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 30px;
+    background-color: black
+} */
+.container .head .card.back div{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: calc(100% - 40px);
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    color: white;
+    background-color: #6c757d;
+
+    letter-spacing: 1px;
+    border-radius: 6px
+}
+
+@media (min-width: 576px){
+    .container .head .card.back div{
+        top: 65px;
+        height: 40px;
+    }
+
+}
+
+@media (min-width: 768px){
+    .container .head .card.back div{
+        top: 80px;
+        height: 40px;
+    }
+
+}
