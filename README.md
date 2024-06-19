@@ -2,7 +2,7 @@
 
 # Interactive Card Details
 
-![App Image]("./images/card-details.png")
+![App Image](./images/card-details.png)
 
 ## Features
 
